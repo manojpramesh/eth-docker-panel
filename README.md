@@ -17,9 +17,9 @@ After Docker Toolbox has been installed, create a ```default``` machine to run D
 
 Clone the repository
 
-'''
+```
 git clone https://github.com/manojpramesh/eth-docker-panel.git
-'''
+```
 
 Run the following to create a single node network:
 
@@ -42,9 +42,13 @@ WIP
 
 As part of the bootstrapping process we included 4 accounts pre-filled with 1000 ethers by default.
 
+```
 Password : Innov@te@ey
+```
 
-1. 0x80a093906307ca03df8383eff05fb8957e852e43
-2. 0x2e884d0e0c9ba6c3b7c1a495cdcae319519a8884
-3. 0x76ad7c62dbfee3225048ded12d9472a695b20bd3
-5. 0xb7d1973a24b7185f8c895a3f9316868c5aeb4f8a
+```
+0x80a093906307ca03df8383eff05fb8957e852e43
+0x2e884d0e0c9ba6c3b7c1a495cdcae319519a8884
+0x76ad7c62dbfee3225048ded12d9472a695b20bd3
+0xb7d1973a24b7185f8c895a3f9316868c5aeb4f8a
+```
