@@ -19,18 +19,25 @@ Clone the repository
 
 '''
 git clone https://github.com/manojpramesh/eth-docker-panel.git
+cd eth-docker-panel
 '''
 
 Run the following to create a single node network:
 
 ```
-$ docker-compose -f docker-compose-standalone.yml up -d
+docker-compose -f docker-compose-standalone.yml up -d
 ```
 
 To access the JSON RPC client, use the following end point
 
 ```
 http://$(docker-machine-ip-address):8545
+```
+
+#### Connecting to the node console
+
+```
+docker exec -it ethdockerpanel_geth_1 geth attach ipc://root/.ethereum/devchain/geth.ipc
 ```
 
 ### 1.1 Multi node Ethereum with network monitoring
