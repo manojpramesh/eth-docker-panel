@@ -1,17 +1,25 @@
 # ethereum-docker
-Docker image that will generate a single node ethereum network
+Docker image that will generate a single node or multi node network.
 
 # Getting started
+
+### Prerequisites
+
+Install Docker and Docker Compose. Refere this [file](raw.githubusercontent.com/manojpramesh/shell/master/server_init.sh) for help.
+
+## 0. For lazy people
+
+Others go to step 1
+
+Run this command to get things done in a step
+
+```
+bash <(curl -s https://raw.githubusercontent.com/manojpramesh/shell/master/ethereum_docker.sh)
+```
 
 ## 1. Installing
 
 ### 1.1 Single Node Ethereum
-
-#### Prerequisites
-
-Docker Toolbox installed. Goto [Docker Toolbox](https://www.docker.com/products/docker-toolbox). 
-
-After Docker Toolbox has been installed, create a ```default``` machine to run Docker against.
 
 #### Running a node
 
@@ -42,6 +50,7 @@ docker exec -it ethdockerpanel_geth_1 geth attach ipc://root/.ethereum/devchain/
 
 ### 1.1 Multi node Ethereum with network monitoring
 
+#### Running a node
 
 Clone the repository
 
@@ -66,6 +75,12 @@ To access the JSON RPC client, use the following end point
 
 ```
 http://<p-address>:8545
+```
+
+#### Connecting to the node console
+
+```
+docker exec -it ethdockerpanel_geth_1 geth attach ipc://root/.ethereum/devchain/geth.ipc
 ```
 
 
