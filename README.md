@@ -5,7 +5,7 @@ Docker image that will generate a single node or multi node network.
 
 ### Prerequisites
 
-Install Docker and Docker Compose. Refere this [file](raw.githubusercontent.com/manojpramesh/shell/master/server_init.sh) for help.
+Install Docker and Docker Compose. Refere this [file](https://raw.githubusercontent.com/manojpramesh/shell/master/server_init.sh) for help.
 
 ## 0. For lazy people
 
